@@ -46,7 +46,7 @@ public class App
                         break;
                     
                     case 3:
-                        System.out.print("Kuinka monta km/h haluat kiihdyttää?");
+                        System.out.print("Kuinka monta km/h haluat kiihdyttää? ");
                         String accelString = sc.nextLine();
                         int accelerate = Integer.parseInt(accelString);
                         newCar.accelerate(accelerate);
