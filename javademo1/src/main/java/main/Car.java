@@ -37,8 +37,10 @@ public class Car {
     }
 
     public void decelerate(int decelerate) {
-        if (decelerate < 0)
+        if (decelerate < 0) {
             System.out.println("Nopeuden täytyy olla positiivinen luku.");
+            return;
+        }
         if (speed - decelerate < 0)
             speed = 0;
         else {
