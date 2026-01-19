@@ -53,7 +53,7 @@ public class App
                         break;
 
                     case 4:
-                        System.out.print("Kuinka monta km/h haluat hidastaa?");
+                        System.out.print("Kuinka monta km/h haluat hidastaa? ");
                         String decelString = sc.nextLine();
                         int decelerate = Integer.parseInt(decelString);
                         newCar.decelerate(decelerate);
