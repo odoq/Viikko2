@@ -43,6 +43,20 @@ public class App
 
                         newCar = new Car(newBrand, newModel);
                         break;
+                    
+                    case 3:
+                        System.out.println("Kuinka monta km/h haluat kiihdyttää?");
+                        String accelString = sc.nextLine();
+                        int accelerate = Integer.parseInt(accelString);
+                        newCar.accelerate(accelerate);
+                        break;
+
+                    case 4:
+                        System.out.println("Kuinka monta km/h haluat hidastaa?");
+                        String decelString = sc.nextLine();
+                        int decelerate = Integer.parseInt(decelString);
+                        newCar.decelerate(decelerate);
+                        break;
 
                     case 0:
                         System.out.println("Kiitos ohjelman käytöstä.");
