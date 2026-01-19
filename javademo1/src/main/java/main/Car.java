@@ -16,9 +16,20 @@ public class Car {
         
     }
 
+    public void setBrand(String brand) {
+    this.brand = brand;
+    
+    }
+
+    public void setModel(String model) {
+    this.model = model;
+    
+    }
+
+
     public void accelerate(int accelerate) {
         if (accelerate < 0)
-            System.out.println("Nopeuden täytyy olla positiivinen luku.");
+            System.out.print("Nopeuden täytyy olla positiivinen luku.");
         else {
             speed = speed + accelerate;
         }
@@ -27,7 +38,7 @@ public class Car {
 
     public void decelerate(int decelerate) {
         if (decelerate < 0)
-            System.out.println("Nopeuden täytyy olla positiivinen luku.");
+            System.out.print("Nopeuden täytyy olla positiivinen luku.");
         if (speed - decelerate < 0)
             speed = 0;
         else {

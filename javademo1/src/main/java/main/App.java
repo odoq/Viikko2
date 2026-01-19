@@ -41,18 +41,19 @@ public class App
                         System.out.print("Anna uusi auton malli: ");
                         String newModel = sc.nextLine();
 
-                        newCar = new Car(newBrand, newModel);
+                        newCar.setBrand(newBrand);
+                        newCar.setModel(newModel);
                         break;
                     
                     case 3:
-                        System.out.println("Kuinka monta km/h haluat kiihdyttää?");
+                        System.out.print("Kuinka monta km/h haluat kiihdyttää?");
                         String accelString = sc.nextLine();
                         int accelerate = Integer.parseInt(accelString);
                         newCar.accelerate(accelerate);
                         break;
 
                     case 4:
-                        System.out.println("Kuinka monta km/h haluat hidastaa?");
+                        System.out.print("Kuinka monta km/h haluat hidastaa?");
                         String decelString = sc.nextLine();
                         int decelerate = Integer.parseInt(decelString);
                         newCar.decelerate(decelerate);
